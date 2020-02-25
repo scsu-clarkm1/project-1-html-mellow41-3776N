@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>The Lazy Chef</title>
+        
+    </head>
+</html>
+<body>
+    
+    <h3 style="text-align:Center;">The Lazy Chef - Suggest a Recipe</h3>
+    <h1 style="font-size:280%;">The Lazy Chef</h1>
+    <!--Content-->
+    <main>
+        <article id="featured-recipe">
+            <section id="Main-content">
+                <p style="font-size:20px;">Simple recipes to spend more time eating and less time cooking.</p>
+            </section>
+            <hr>
+            <h1 style="font-size:210%;">Suggest a Recipe</h1>
+
+            <section id="info">
+               <p style="font-size:20px;">We are always looking for delicious new recipes at The Lazy Chef. 
+                If you think you have something fantastic, 
+                please ﬁll out the details below and we will get back to you.</p> <br>
+               </article>
+            </section>
+
+            <form action ="some_server_script.py" method="POST">
+    
+<!-- Text Input-->
+    <div>
+        <label for="Chefname">Chef's Name</label><br>
+        <input type="text" name="Chefname"
+            id="Chefname" placeholder="Full name" size="50">
+</div>
+
+<div>
+    <label for="email_field">Email</label><br>
+    <input type="email" name="email" id="email_field" placeholder="Chef's email">
+</div>
+
+<div>
+    <label for="Recipe_title">Recipe Title</label><br>
+    <input type="text" name="Recipe_title"
+        id="Recipe_title" placeholder="Short recipe title" size="50">
+</div>
+<div>
+    <!--Textarea-->
+    <label for="Recipe_instructions">Recipe Instructions</label><br>
+    <textarea name="Recipe_instructions" id="instructions" placeholder="Provide detailed instructions" cols="50" rows="10"></textarea>
+</div>
+
+<div>
+    <!--Radio Button-->
+    <label>Recipe Difficulty</label><br>
+    <input type="radio" name="recipe_difficulty" value="easy" id="easy">
+    <label for="easy">Easy</label>
+
+    <input type="radio" name="recipe_difficulty" value="medium" id="medium">
+    <label for="medium">Medium</label>
+
+    <input type="radio" name="recipe_difficulty" value="hard" id="hard">
+    <label for="hard">Hard</label>
+</div>
+
+<div>
+    <!-- Select-->
+    <label for="food_category">
+        Food Category</label><br>
+        <select style= "width: 100px" name="food_category" id="food_category">
+            <option value=""selected>---</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="snack">Snack</option>
+        </select>
+</div>
+<!--Buttons-->
+<input type="Submit" name="Send Request" id="">
+<input type="reset" value="Cancel">
+<hr>
+<footer>
+    <p>Copyright &copy; 2020</p>
+</footer>
+
+</form>
+</body>
+</html>
